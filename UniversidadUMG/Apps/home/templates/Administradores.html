@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad</title>
-</head>
-<body>
-    <b><FONT COLOR="blue"><center> <h1>Listado de datos Administradores</h1> </center></FONT>
- <b>
+{% extends "base.html" %}
 
-    <div><br></div>
-    <div class="table-responsive">
-        <b><FONT COLOR="purple"><center><table class="table table-hover table-dark text-center"; id="tabla">
-      <thead class="thead-lighy">
+{% block contenido %}
+<h2> Administradores </h2>
+<table>
+<tr>
+ <b>
   <td><strong><h4>NOMBRE</strong></td>
   <td><strong><h4>APELLIDO</strong></td>
   <td><strong><h4>CODIGO</strong></td>
@@ -56,6 +47,5 @@
         
     </table>
     <a href="{% url 'home:homeapp' %}">home</a>
+{% endblock%}
     
-</body>
-</html>

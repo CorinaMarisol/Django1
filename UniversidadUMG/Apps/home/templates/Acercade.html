@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad</title>
-</head>
-<body>
-    <b><FONT COLOR="magenta"><center> <h1>Acerca de Universidad Mariano Galvez</h1> </center></FONT>
-        <b>
-            <b><FONT COLOR="green"><center> <table>
+{% extends "base.html" %}
+
+{% block contenido %}
+
+        <h2> Acerca de </h2>
+        <table>
         <tr>
             <td>Informacion</td>
             <td>Carreras</td>
@@ -43,6 +37,5 @@
         
     </table>
     <a href="{% url 'home:homeapp' %}">home</a>
+ {% endblock%}
     
-</body>
-</html>
