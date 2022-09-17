@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block contenido %}
+
+<a class="btn btn-primary" href="{% url 'home:Estudiantesapp' %}">ESTUDIANTES</a>
+<a class="btn btn-primary" href="{% url 'home:Acercadeapp' %}">ACERCA DE</a>
+<a class="btn btn-primary" href="{% url 'home:homeapp' %}">HOME</a>
+
 <h2> Administradores </h2>
 <table>
 <tr>
@@ -46,6 +51,5 @@
 </div>
         
     </table>
-    <a href="{% url 'home:homeapp' %}">home</a>
 {% endblock%}
     

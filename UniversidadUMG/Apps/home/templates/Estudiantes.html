@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
           {% block contenido %}
-          <h2> Estudiantes </h2>
+          <a class="btn btn-primary" href="{% url 'home:homeapp' %}">HOME</a>
+          <a class="btn btn-primary" href="{% url 'home:Administradoresapp' %}">ADMINISTRADORES</a>
+          <a class="btn btn-primary" href="{% url 'home:Acercadeapp' %}">ACERCA DE</a>
+          <br><br><h2> Estudiantes </h2>
           <table>
         <tr>
             <td>Id</td>
@@ -31,11 +34,8 @@
             <td>0903-18-19426</td>
             <td>Fernada</td>
             <td>Fuentes</td>
-            <td>Arquitectura</td>
-        </tr></center></FONT>
-        
+            <td>Arquitectura</td>        
     </table>
-    <a href="{% url 'home:homeapp' %}">home</a>
 {% endblock%}
 
     
